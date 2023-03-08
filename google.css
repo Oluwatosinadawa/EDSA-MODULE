@@ -6,7 +6,7 @@
 }
 body{
     background-color: rgba(0, 0, 0, 0.829);
-    margin: 30px;
+    margin: 20px;
 }
 .box1 {
     display: flex;
@@ -33,6 +33,9 @@ body{
 .box1_left a {
     height: 90px;
     text-decoration: none;
+}
+.box1_left .All {
+    color: blue;
 }
 .box1_left .image {
     color: white;
@@ -235,13 +238,28 @@ input:hover{
     text-decoration: underline;
 }
 
-@media screen and (max-width: 3000px) {
+@media screen and (max-width: 650px) {
     .search_area {
         width: 90%;
+    }
+    .container_box {
+        max-width: 100%;
+        padding: 0;
     }
     .box1 {
         display: flex;
         justify-content: space-between;
+        width: 100%;
+    }
+    .box1_left{
+        gap: 7px;
+        padding: 5px;
+    }
+    .box1_right {
+        gap: 7px;
+    }
+    .logo {
+        width: 80%;
     }
     .search-wrapper {
         height: 35vh;
@@ -254,8 +272,13 @@ input:hover{
         flex-direction: column;
     }
     .main {
+        padding-top: 100px;
         justify-content: center;
         padding-bottom: 400px;
+        font-size: 10px;
+    }
+    .main_top {
+        flex-wrap: nowrap;
     }
     footer {
         height: 150px;      
